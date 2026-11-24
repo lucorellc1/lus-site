@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Policies — Lu's Card Art</title>
+<link rel="stylesheet" href="/site.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="container">
+    <a class="brand" href="/">Lu's <span>Card Art</span></a>
+    <div class="nav-links">
+      <a href="#shipping">Shipping</a>
+      <a href="#refunds">Refunds</a>
+      <a href="#terms">Terms</a>
+      <a href="#privacy">Privacy</a>
+      <a class="btn" href="#" data-checkout>Order</a>
+    </div>
+  </div>
+</nav>
+
+<main class="doc">
+  <h1>Policies</h1>
+  <p class="muted">Lu's Card Art is operated by Lu Core LLC, a Michigan limited liability company. Questions about any of these policies can be sent to <a href="mailto:lucorellc1@gmail.com">lucorellc1@gmail.com</a>.</p>
+
+  <h2 id="shipping">Shipping</h2>
+  <ul>
+    <li>All cards are personalized and made to order.</li>
+    <li>Orders typically arrive within 2–3 weeks of purchase.</li>
+    <li>Please make sure the shipping address you enter at checkout is correct. We ship to the address provided with your order.</li>
+    <li>If your order hasn't arrived after 3 weeks, email us with your name and order details.</li>
+  </ul>
+
+  <h2 id="refunds">Refunds</h2>
+  <p>Because every order is personalized and made to order, <strong>all sales are final and we do not offer refunds.</strong></p>
+  <p>Card designs are selected at random and come in different rarities. Specific designs or rarities can't be chosen or guaranteed, and receiving a particular design or rarity is not grounds for a refund or exchange.</p>
+
+  <h2 id="terms">Terms of sale</h2>
+  <ul>
+    <li><strong>Product.</strong> Each person's order includes two personalized metal engraved collectible cards, in standard playing-card size (about 2.5 × 3.5 inches).</li>
+    <li><strong>Random selection.</strong> Designs are randomly selected from our current designs, which vary in rarity.</li>
+    <li><strong>Pricing.</strong> Prices are listed per person in US dollars. Group pricing is offered for orders placed together; each person may pay separately. Prices and promotions may change without notice, and discount codes are valid only while active.</li>
+    <li><strong>Payment.</strong> Payments are processed by our third-party payment processor. We do not store your card details.</li>
+    <li><strong>Collectibles.</strong> Cards are sold as collectible art and are not redeemable for cash or any other value.</li>
+    <li><strong>Governing law.</strong> These terms are governed by the laws of the State of Michigan.</li>
+  </ul>
+
+  <h2 id="privacy">Privacy</h2>
+  <p>We collect only what we need to fulfill your order: your name, email address, shipping address, and any username you provide at checkout. Payment information is handled by our payment processor and never reaches us.</p>
+  <p>We use this information to make and ship your order and to contact you about it. We do not sell your personal information. To ask about or delete your information, email <a href="mailto:lucorellc1@gmail.com">lucorellc1@gmail.com</a>.</p>
+
+  <p class="muted" style="margin-top:40px">Last updated <span id="upd"></span>.</p>
+</main>
+
+<footer class="site">
+  <div class="container">
+    <div>© <span id="yr"></span> Lu Core LLC · <a href="mailto:lucorellc1@gmail.com">lucorellc1@gmail.com</a></div>
+    <div><a href="/">Home</a> · <a href="#" data-checkout>Order</a></div>
+  </div>
+</footer>
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+  document.getElementById("upd").textContent = "November 2026";
+</script>
+<script>
+  // ---- Paste your checkout site's address here once it's online ----
+  const CHECKOUT_URL = "https://YOUR-CHECKOUT-SITE.vercel.app";
+  document.querySelectorAll("[data-checkout]").forEach(a => a.href = CHECKOUT_URL);
+</script>
+</body>
+</html>
