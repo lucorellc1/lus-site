@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Forged Legends">
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff0c2"/>
+      <stop offset=".35" stop-color="#f2c14e"/>
+      <stop offset=".65" stop-color="#b9831f"/>
+      <stop offset="1" stop-color="#f6d27a"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2833"/>
+      <stop offset="1" stop-color="#121117"/>
+    </linearGradient>
+  </defs>
+  <!-- badge -->
+  <polygon points="50,3 91,26.5 91,73.5 50,97 9,73.5 9,26.5" fill="url(#steel)" stroke="url(#gold)" stroke-width="4" stroke-linejoin="round"/>
+  <polygon points="50,12 83,31 83,69 50,88 17,69 17,31" fill="none" stroke="#f2c14e" stroke-opacity=".35" stroke-width="1"/>
+  <!-- F -->
+  <g fill="url(#gold)">
+    <polygon points="27,25 63,25 58,33 36,33 36,75 27,75"/>
+    <polygon points="36,45 58,45 54,52 36,52"/>
+  </g>
+  <!-- L, interlocked through the F's middle bar -->
+  <g fill="url(#gold)" stroke="#121117" stroke-width="2.5" paint-order="stroke">
+    <polygon points="47,38 56,38 56,67 74,67 69,75 47,75"/>
+  </g>
+  <!-- F's middle bar passes back over the L -->
+  <polygon points="36,45 58,45 54,52 36,52" fill="url(#gold)"/>
+  <!-- sparks -->
+  <g fill="#fff0c2">
+    <circle cx="70" cy="30" r="1.4"/><circle cx="76" cy="38" r="0.9"/><circle cx="66" cy="22" r="0.8"/>
+  </g>
+</svg>
