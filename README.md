@@ -1,4 +1,4 @@
-# Lu's Card Art: info site
+# Forged Legends: info site
 
 The public business site: home page, how it works, card details, gallery, pricing, FAQ and policies.
 It has no payment code. Every "Order" button links to your separate checkout site.
